@@ -39,6 +39,30 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var selectBtn2: UIButton!
+    @IBOutlet var itemsList: [UIButton]!
+    
+    @IBAction func selectBtnSelected2(_ sender: UIButton) {
+        selectBtn2.titleLabel?.textAlignment = NSTextAlignment.center
+        selectBtn2.setTitleColor(UIColor.black, for: .normal)
+        itemsList.forEach { (Button) in
+            UIView.animate(withDuration: 0.3, animations: { Button.isHidden = !Button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
+    @IBAction func itemsListSelected(_ sender: UIButton) {
+        selectBtn2.titleLabel?.text = sender.titleLabel?.text //changes menu label
+        itemsList.forEach { (button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
+    
 
 }
 

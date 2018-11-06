@@ -25,6 +25,70 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-xX-dCN">
+                                <rect key="frame" x="16" y="105" width="40" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kwn-eu-eZc">
+                                <rect key="frame" x="109" y="151" width="250" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-NR-Z43">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="-- Select --">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectBtnSelected2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A38-nG-LJl"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EM-nq-LGo">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="0.0"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Cadburys">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="itemsListSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mUB-F7-Uti"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n36-Gs-ZZH">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="0.0"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Galaxy">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="itemsListSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5t-fk-HIm"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpO-gP-FNy">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="0.0"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Nestle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="itemsListSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2lZ-gL-1iM"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOf-9N-VsP">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="0.0"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Mars">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="itemsListSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecc-CB-ga6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="15g-mo-0gg"/>
+                                </constraints>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PGf-EG-AK4">
                                 <rect key="frame" x="109" y="100" width="250" height="30"/>
                                 <subviews>
@@ -93,25 +157,45 @@
                                     <constraint firstAttribute="width" constant="250" id="plp-YL-U6U"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chocolate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvK-4R-4nZ">
+                                <rect key="frame" x="16" y="156" width="82.666666666666671" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PGf-EG-AK4" secondAttribute="trailing" constant="16" id="3sY-12-lWh"/>
+                            <constraint firstItem="kwn-eu-eZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="BTo-mE-Sqr"/>
+                            <constraint firstItem="iap-xX-dCN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="GTt-qi-Lzi"/>
                             <constraint firstItem="SuY-ej-DU0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="Jti-f4-dXb"/>
                             <constraint firstItem="PGf-EG-AK4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="NAq-qA-bj0"/>
                             <constraint firstItem="PGf-EG-AK4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="SDn-tY-o6a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kwn-eu-eZc" secondAttribute="trailing" constant="16" id="UR4-Cj-pPU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iap-xX-dCN" secondAttribute="trailing" constant="319" id="WwD-LE-G9X"/>
+                            <constraint firstItem="HvK-4R-4nZ" firstAttribute="top" secondItem="iap-xX-dCN" secondAttribute="bottom" constant="30.670000000000002" id="XLL-bq-DVv"/>
+                            <constraint firstItem="kwn-eu-eZc" firstAttribute="top" secondItem="PGf-EG-AK4" secondAttribute="bottom" constant="21" id="Y3F-oh-Xsi"/>
                             <constraint firstItem="SuY-ej-DU0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YcB-kc-6ev"/>
+                            <constraint firstItem="iap-xX-dCN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bvh-sR-3uz"/>
+                            <constraint firstItem="HvK-4R-4nZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cCl-vX-hQK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SuY-ej-DU0" secondAttribute="trailing" constant="44" id="uwg-iy-w52"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="selectBtn2" destination="Ema-NR-Z43" id="Pli-Di-WOi"/>
                         <outlet property="selectButton" destination="Hbd-al-j9X" id="CvU-jh-a6a"/>
                         <outletCollection property="items" destination="9wk-js-eWN" collectionClass="NSMutableArray" id="GVK-7q-SyJ"/>
                         <outletCollection property="items" destination="0i0-oy-eJg" collectionClass="NSMutableArray" id="Xvi-Oo-FjP"/>
                         <outletCollection property="items" destination="asG-L3-E21" collectionClass="NSMutableArray" id="ZYS-bQ-fQp"/>
                         <outletCollection property="items" destination="1RR-q4-9rV" collectionClass="NSMutableArray" id="2Yd-Jm-b9N"/>
                         <outletCollection property="items" destination="rrI-gF-b3O" collectionClass="NSMutableArray" id="tP9-fM-KrS"/>
+                        <outletCollection property="itemsList" destination="3EM-nq-LGo" collectionClass="NSMutableArray" id="LjN-7C-HJ6"/>
+                        <outletCollection property="itemsList" destination="3EM-nq-LGo" collectionClass="NSMutableArray" id="TN3-gC-WHZ"/>
+                        <outletCollection property="itemsList" destination="n36-Gs-ZZH" collectionClass="NSMutableArray" id="0Sl-oi-gZa"/>
+                        <outletCollection property="itemsList" destination="SpO-gP-FNy" collectionClass="NSMutableArray" id="QO3-yH-YTe"/>
+                        <outletCollection property="itemsList" destination="fOf-9N-VsP" collectionClass="NSMutableArray" id="BGg-ln-hgG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
